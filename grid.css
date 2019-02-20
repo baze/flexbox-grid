@@ -1,23 +1,9 @@
 :root {
 /*grid configuration*/
---grid-maxwidth: 1140px;
---grid-innerwidth: 1024px;
 --columns: 12;
 --margin: 12px;
 --maxwidth: 40em;
 --multiplier: calc( var(--maxwidth) - 100%); /*this is your breakpoint without media queries */
-}
-
-.container{ 
-    width: 100%;
-    max-width: var(--grid-maxwidth);
-    margin: auto;
-}
-
-.container__inner{
-  width: 100%;
-  max-width: var(--grid-innerwidth);
-  margin: auto;
 }
 
 .grid-container{

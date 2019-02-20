@@ -23,6 +23,7 @@
 .grid-container{
   display: flex;
   flex-wrap: wrap;
+  margin: calc(var(--margin) * -1); /* excess margin removed */
 }
 
 .grid-container + .grid-container{

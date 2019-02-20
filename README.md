@@ -16,7 +16,6 @@
 ```
 
 ## 2. Usage
-<link rel="stylesheet" id="dashicons-css" href="https://raw.githubusercontent.com/jwdsign/flexbox-grid/master/grid.css" type="text/css" media="all">
 
 ### Case 1: equally sized items
 
@@ -36,25 +35,7 @@
 	<div class="some-item"></div>
 </div>
 ```
-<style>.some-item{min-height:2.5em; background-color:#eee;}</style>
-<div class="grid-container grid-4">
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-	<div class="some-item"></div>
-</div>
-
 ### Case 2: differently sized items
-
-#### Code:
 
 ```html
 <div class="grid-container">
@@ -76,19 +57,3 @@
 	<div class="some-item columns-12"></div>
 </div>
 ```
-#### Result:
-<style>.some-item{min-height:2.5em; background-color:#eee;}</style>
-<div class="grid-container">
-	<div class="some-item columns-6"></div>
-	<div class="some-item columns-6"></div>
-	<div class="some-item columns-4"></div>
-	<div class="some-item columns-4"></div>
-	<div class="some-item columns-4"></div>
-	<div class="some-item columns-2"></div>
-	<div class="some-item columns-2"></div>
-	<div class="some-item columns-2"></div>
-	<div class="some-item columns-2"></div>
-	<div class="some-item columns-2"></div>
-	<div class="some-item columns-2"></div>
-	<div class="some-item columns-12"></div>
-</div>

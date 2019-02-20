@@ -1,0 +1,51 @@
+:root {
+/*grid configuration*/
+--grid-maxwidth: 1140px;
+--grid-innerwidth: 1024px;
+--columns: 12;
+--margin: 12px;
+--maxwidth: 40em;
+--multiplier: calc( var(--maxwidth) - 100%); /*this is your breakpoint without media queries */
+}
+
+.container{ 
+    width: 100%;
+    max-width: var(--grid-maxwidth);
+    margin: auto;
+}
+
+.container__inner{
+  width: 100%;
+  max-width: var(--grid-innerwidth);
+  margin: auto;
+}
+
+.grid-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-container + .grid-container{
+  margin-top: var(--margin);
+}
+
+.grid-container > * {
+  max-width: 100%;  
+  flex-basis: calc(var(--multiplier) * 999);
+  margin: var(--margin);
+}
+
+/* grid items */
+.grid-1 > *, .columns-1{--span:1;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-2 > *, .columns-2{--span:2;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-3 > *, .columns-3{--span:3;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-4 > *, .columns-4{--span:4;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-5 > *, .columns-5{--span:5;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-6 > *, .columns-6{--span:6;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-7 > *, .columns-7{--span:7;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-8 > *, .columns-8{--span:8;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-9 > *, .columns-9{--span:9;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-10 > *, .columns-10{--span:10;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-11 > *, .columns-11{--span:11;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+.grid-12 > *, .columns-12{--span:12;--column: calc( 100% / var(--columns) * var(--span) );min-width: calc( var(--column) - (var(--margin) * 2));}
+/*add more items to your liking*/

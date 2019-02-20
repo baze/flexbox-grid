@@ -2,7 +2,21 @@
 Dynamic flexbox based grid system using CSS custom properties, breakpoints and NO media-queries.
 1.81kb minified. Very much inspired by @heydonworks' article: http://www.heydonworks.com/article/the-flexbox-holy-albatross
 
-## Usage
+## 1. Configuring the grid
+
+```css
+:root {
+/*grid configuration*/
+--grid-maxwidth: 1140px;
+--grid-innerwidth: 1024px;
+--columns: 12;
+--margin: 12px;
+--maxwidth: 40em;
+--multiplier: calc( var(--maxwidth) - 100%); /*this is your breakpoint without media queries */
+}
+```
+
+## 2. Usage
 
 ### Case 1: equally sized items
 
